@@ -32,6 +32,9 @@ func init() {
 func main() {
 	utl.CreateFolder(app.DataPath)
 	app.Process = utl.PathJoin(app.AppPath, "Caprine.exe")
+	app.Args = []string{
+		"--user-data-dir=" + app.DataPath,
+	}
 
 	// Copy default shortcut
 	shortcutPath := path.Join(os.Getenv("APPDATA"), "Microsoft", "Windows", "Start Menu", "Programs", "Caprine Portable.lnk")
