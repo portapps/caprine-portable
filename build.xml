@@ -35,6 +35,8 @@
       <fileset dir="${extract.path2}"/>
     </move>
 
+    <antcall target="load.lib.asar"/>
+
     <echo message="Extracting app.asar..."/>
     <exec executable="asar.cmd" failonerror="true" dir="${extract.path}\resources">
       <arg value="extract"/>
