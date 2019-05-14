@@ -4,15 +4,21 @@
   <a href="https://portapps.io/app/caprine-portable/#download"><img src="https://img.shields.io/github/release/portapps/caprine-portable.svg?style=flat-square" alt="GitHub release"></a>
   <a href="https://portapps.io/app/caprine-portable/#download"><img src="https://img.shields.io/github/downloads/portapps/caprine-portable/total.svg?style=flat-square" alt="Total downloads"></a>
   <a href="https://travis-ci.com/portapps/caprine-portable"><img src="https://img.shields.io/travis/com/portapps/caprine-portable/master.svg?style=flat-square" alt="Build Status"></a>
-  <a href="https://github.com/portapps/portapps"><img src="https://img.shields.io/badge/portapps-1.22.2-479fdb.svg?style=flat-square" alt="Portapps version"></a>
+  <a href="https://github.com/portapps/portapps"><img src="https://img.shields.io/badge/portapps-1.23.0-479fdb.svg?style=flat-square" alt="Portapps version"></a>
   <a href="https://goreportcard.com/report/github.com/portapps/caprine-portable"><img src="https://goreportcard.com/badge/github.com/portapps/caprine-portable?style=flat-square" alt="Go Report"></a>
   <a href="https://www.codacy.com/app/portapps/caprine-portable"><img src="https://img.shields.io/codacy/grade/7bfa9d31b2774e0eb66a2aca48c91a94.svg?style=flat-square" alt="Code Quality"></a>
   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WQD7AQGPDEPSG"><img src="https://img.shields.io/badge/donate-paypal-7057ff.svg?style=flat-square" alt="Donate Paypal"></a>
 </p>
 
+## Notice of Non-Affiliation and Disclaimer
+
+Portapps is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Caprine, or any of its subsidiaries or its affiliates. The official Caprine website can be found at https://sindresorhus.com/caprine/.
+
+The name Caprine® as well as related names, marks, emblems and images are registered trademarks of their respective owners.
+
 ## About
 
-[Caprine](https://sindresorhus.com/caprine/) portable app made with 🚀 [Portapps](https://portapps.io).<br />
+Caprine portable app made with 🚀 [Portapps](https://portapps.io).<br />
 Documentation and downloads can be found on https://portapps.io/app/caprine-portable/
 
 ## How can I help ?
