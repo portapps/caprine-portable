@@ -12,13 +12,15 @@
 
 ## Notice of Non-Affiliation and Disclaimer
 
-Portapps is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Caprine, or any of its subsidiaries or its affiliates. The official Caprine website can be found at https://sindresorhus.com/caprine/.
+Portapps is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Caprine™, or any of its subsidiaries or its affiliates.
 
-The name Caprine® as well as related names, marks, emblems and images are registered trademarks of their respective owners.
+The official Caprine™ website can be found at https://sindresorhus.com/caprine/.
+
+The name Caprine™ as well as related names, marks, emblems and images are registered trademarks of their respective owners.
 
 ## About
 
-Caprine portable app made with 🚀 [Portapps](https://portapps.io).<br />
+Caprine™ portable app made with 🚀 [Portapps](https://portapps.io).<br />
 Documentation and downloads can be found on https://portapps.io/app/caprine-portable/
 
 ## How can I help ?
