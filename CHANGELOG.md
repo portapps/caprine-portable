@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.36.0-14 (2019/08/19)
+
+* Uncaught exception error (Issue #1)
+
 ## 2.36.0-13 (2019/08/12)
 
 * Caprine 2.36.0
