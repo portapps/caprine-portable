@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.37.0-16 (2019/08/23)
+
+* Caprine 2.37.0
+* Portapps 1.26.0
+
 ## 2.36.0-14 (2019/08/19)
 
 * Uncaught exception error (Issue #1)
