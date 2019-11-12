@@ -3,6 +3,10 @@ version: ~> 1.0
 os: windows
 language: shell
 
+env:
+  global:
+    - secure: p9HMcLujuqXNO+TNLcCxrcMj8yzCRmtTTQHksTPw6kc8YdvYDvxOQ6Ngeo+VXTJQTKSh1D5bDuFF3m+ZoOl4vY8TyVIlNtKaM2TtJy1zsXgRVTSkO6yO2AZ4McFBN/lC/ODXD5aRCOjRmygYcRIca5Lw/8xUprf2h8kVFmPkrwQfSn1Fdz7Jt4DuEao3m7iHfya+1YD1+iB9JfDVE40NmDmwt3POJ+HjCOzDYXU0e9FCI3ZIIern23kMPFVhVoge2DX2kPf3ygTKjgZVUCDxQvKrN8qIvBe8I3Z7fhG1yQHPwsFkWWaj27aKmCpiVW5RQoY55KHALCWRDUGoGzO7xkvcXqiyz/OXpyP3RA6v4J0B7V5ChdjPM/Cv8a29imMHUKUV6GEUXcKP0J3JxeHmSarmh+zp+xvw6DCWXPmFvTEh62Mx1nvny/t6FFaUebWBg/upWen4ecIY/x3oy0l+40a8DOmFMA1EwxdY8e4RnYA0lnQ4Mr4MKvV1oA6bz4wfYh0cLsnmQZO4BgqQfgH/wqXX8fNiwxxKDv1JPKZBtQREnu7hq6gxDz8jQXHVZrxZd3D4n7hPHThxUUuQE7gYqjzMcY2iZL7V8tNzhqqcCPHlLT44frF7drs+9UM83HQB6nn9c82798VjgdsNt7AzB/uT0vI9JsyrKt9f9lP3Ic0= # GITHUB_TOKEN
+
 import:
   - source: portapps/portapps:.travis/configs/install.yml
   - source: portapps/portapps:.travis/configs/build.yml
@@ -10,7 +14,3 @@ import:
   - source: portapps/portapps:.travis/configs/git-config.yml
   - source: portapps/portapps:.travis/configs/deploy.yml
   - source: portapps/portapps:.travis/configs/notifs.yml
-
-deploy:
-  api_key:
-    secure: fXmrnF+rhmRkW4BghWaTy26RJtVqyKYu5rzh82aD2aoV9JsdSbr07qc77EPuuUdKwX1iz+HNOgoZuwA7vw08HnE8H65UPyYgRF5wJrdWMNzrvGJhIfrvnI78OKdgtW2SEoIr/mYf2NMP4PI+7CskYpLVFhqrSP9tkYVoQqsovmRDCzZjAHHkMLxGNL6Ap/vryHjaNLJmun427jBOX8BJPx5vY4BJJ23w4B2ZwJvvwtETphhSz+Z5MA2/Q0NslhSaAY/rQ6XciY53A1R9Xr1hLmFArq9UOgmDzpRWUA73xc4bde/EtYKowu2eJK/FzA7Q/mHG7a1i8cSHZddQN7v22uNu4fJxXRcI373/tvD40FYiXkgE2SK4AJZxcMFyvFKc8qx4Hy0USLR1Azx8/kMV6cfPVbEGqkqCtvBV3+++pQX1+9B0cI4ixyWDT/WRz7/8K8laJ1fSlcP2+mxOG9Uhc2trBf2t0MfOZoQeaCyKo5RPzppK7Nbwi8JdvSNsGAkxm7fJ40y5saJKTk3Arq9NMj5qtRI3eT7RIDEsDrHJ2yLXqIEukrgyZgwLfBNOb82LRg0yj3+rVV+KrnHi8lxNxIr8dWNXeL2bSo3RZ1nbext8x0XGbG64Px96b0hNav8DAinv0x/fVOkuVQC6kUfCY1DI4TPJgFMbRCUfhZcs2cw=
