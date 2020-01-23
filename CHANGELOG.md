@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.42.0-23 (2020/01/23)
+
+* Caprine 2.42.0
+* Add `cleanup` config
+* Portapps 1.31.0
+
 ## 2.41.1-22 (2019/11/15)
 
 * Caprine 2.41.1
