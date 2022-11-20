@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.57.0-37 (2022/11/20)
+
+* Caprine 2.57.0
+* Portapps 3.6.0
+* Bump github.com/kevinburke/go-bindata
+
 ## 2.55.5-36 (2022/05/22)
 
 * Caprine 2.55.5
