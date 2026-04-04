@@ -1,12 +1,12 @@
 //go:generate go install -v github.com/kevinburke/go-bindata/v4/go-bindata
 //go:generate go-bindata -prefix res/ -pkg assets -o assets/assets.go res/Caprine.lnk
 //go:generate go install -v github.com/josephspurrier/goversioninfo/cmd/goversioninfo
-//go:generate goversioninfo -icon=res/papp.ico -manifest=res/papp.manifest
 package main
 
 import (
 	"os"
 	"path"
+	"path/filepath"
 
 	"github.com/portapps/caprine-portable/assets"
 	"github.com/portapps/portapps/v3"
@@ -40,7 +40,7 @@ func init() {
 
 func main() {
 	utl.CreateFolder(app.DataPath)
-	app.Process = utl.PathJoin(app.AppPath, "Caprine.exe")
+	app.Process = filepath.Join(app.AppPath, "Caprine.exe")
 	app.Args = []string{
 		"--user-data-dir=" + app.DataPath,
 	}
