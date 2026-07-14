@@ -43,6 +43,11 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       -
+        name: Setup Go
+        uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6.5.0
+        with:
+          go-version-file: go.mod
+      -
         name: Update Caprine
         id: update
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
@@ -170,6 +175,11 @@ jobs:
             core.setOutput('version', latest.version);
             core.setOutput('previous-version', currentVersion);
             core.setOutput('release', String(nextRelease));
+      -
+        name: Update assets
+        run: |
+          export PATH="$(go env GOPATH)/bin:${PATH}"
+          go generate -run go-bindata .
       -
         name: Create pull request
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
