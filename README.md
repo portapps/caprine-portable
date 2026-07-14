@@ -12,7 +12,7 @@
 
 Portapps is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Caprine™, or any of its subsidiaries or its affiliates.
 
-The official Caprine™ website can be found at https://sindresorhus.com/caprine/.
+The official Caprine™ website can be found at https://github.com/sindresorhus/caprine.
 
 The name Caprine™ as well as related names, marks, emblems and images are registered trademarks of their respective owners.
 
