@@ -17,7 +17,7 @@ on:
 
 jobs:
   update:
-    runs-on: ubuntu-24.04
+    runs-on: windows-latest
     environment: update-app # secrets are gated by this environment
     timeout-minutes: 10
     permissions:
@@ -178,7 +178,7 @@ jobs:
       -
         name: Update assets
         run: |
-          export PATH="$(go env GOPATH)/bin:${PATH}"
+          $env:PATH = "$(go env GOPATH)\bin;$env:PATH"
           go generate -run go-bindata .
       -
         name: Create pull request
