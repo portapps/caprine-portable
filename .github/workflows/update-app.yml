@@ -43,11 +43,6 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       -
-        name: Setup Go
-        uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6.5.0
-        with:
-          go-version-file: go.mod
-      -
         name: Update Caprine
         id: update
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
@@ -160,8 +155,8 @@ jobs:
             }
 
             let updatedContent = replaceProperty(currentContent, 'app.version', latest.version);
-            const appChanged = updatedContent !== currentContent;
-            const nextRelease = appChanged ? currentRelease + 1 : currentRelease;
+            const versionChanged = updatedContent !== currentContent;
+            const nextRelease = versionChanged ? currentRelease + 1 : currentRelease;
             updatedContent = replaceProperty(updatedContent, 'app.release', String(nextRelease));
 
             if (updatedContent !== currentContent) {
@@ -175,8 +170,16 @@ jobs:
             core.setOutput('version', latest.version);
             core.setOutput('previous-version', currentVersion);
             core.setOutput('release', String(nextRelease));
+            core.setOutput('version-changed', String(versionChanged));
+      -
+        name: Setup Go
+        if: steps.update.outputs.version-changed == 'true'
+        uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6.5.0
+        with:
+          go-version-file: go.mod
       -
         name: Update assets
+        if: steps.update.outputs.version-changed == 'true'
         run: |
           $env:PATH = "$(go env GOPATH)\bin;$env:PATH"
           go generate -run go-bindata .
