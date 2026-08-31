@@ -1,18 +1,19 @@
-//go:generate go install -v github.com/kevinburke/go-bindata/v4/go-bindata
-//go:generate go-bindata -prefix res/ -pkg assets -o assets/assets.go res/Caprine.lnk
 //go:generate go install -v github.com/josephspurrier/goversioninfo/cmd/goversioninfo
 package main
 
 import (
+	_ "embed"
 	"os"
 	"path/filepath"
 
-	"github.com/portapps/caprine-portable/assets"
 	"github.com/portapps/portapps/v3"
 	"github.com/portapps/portapps/v3/pkg/files"
 	"github.com/portapps/portapps/v3/pkg/log"
 	"github.com/portapps/portapps/v3/pkg/shortcut"
 )
+
+//go:embed res/Caprine.lnk
+var defaultShortcut []byte
 
 type config struct {
 	Cleanup bool `yaml:"cleanup" mapstructure:"cleanup"`
@@ -57,11 +58,7 @@ func main() {
 
 	// Copy default shortcut
 	shortcutPath := filepath.Join(os.Getenv("APPDATA"), "Microsoft", "Windows", "Start Menu", "Programs", "Caprine Portable.lnk")
-	defaultShortcut, err := assets.Asset("Caprine.lnk")
-	if err != nil {
-		log.Error().Err(err).Msg("Cannot load asset Caprine.lnk")
-	}
-	err = os.WriteFile(shortcutPath, defaultShortcut, 0644)
+	err := os.WriteFile(shortcutPath, defaultShortcut, 0644)
 	if err != nil {
 		log.Error().Err(err).Msg("Cannot write default shortcut")
 	}
